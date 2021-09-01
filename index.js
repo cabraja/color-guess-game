@@ -29,16 +29,12 @@ const newColors = () => {
             scoreBox.innerHTML=`Score: ${score}`;
         }else{
             const message = failMessages[Math.floor(Math.random()*6)];
-
             box.innerHTML=`<h6>${message}</h6>`;
         }
     })
-
-    
 
 })
 }
 
 newColors();
-
 newButton.addEventListener('click',newColors);
